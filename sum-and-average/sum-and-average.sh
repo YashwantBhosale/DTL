@@ -12,4 +12,6 @@ while true; do
 	sum=$((sum+a))
 done
 echo "sum: $sum"
-echo "average: $((sum/count))"
+#echo "average: $(echo "$sum/$count" | bc)"
+echo "average: $(echo "scale=2; $sum/$count" | bc)"
+
