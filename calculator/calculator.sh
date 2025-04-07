@@ -18,7 +18,8 @@ while true; do
 	echo "2. Subtraction"
 	echo "3. Multiplication"
 	echo "4. Division"
-	echo "5. Exit"	
+	echo "5. Exponent"	
+	echo "6. Exit"
 
 	read option
 
@@ -31,6 +32,8 @@ while true; do
 	elif [ $option -eq 4 ]; then
 		ans=$(echo "scale=2; $a/$b" | bc)
 	elif [ $option -eq 5 ]; then
+		ans=$(echo "scale=2; $a^$b" | bc)
+	elif [ $option -eq 6 ]; then 
 		break
 	fi
 	echo "Answer: $ans"
