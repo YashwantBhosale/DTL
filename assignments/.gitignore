@@ -1,0 +1,7 @@
+*.tar.gz
+*_extracted
+extracted
+*.zip
+*.bz2
+*.gz
+*.tar.*
