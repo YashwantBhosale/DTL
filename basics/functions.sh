@@ -1,8 +1,6 @@
 #!/bin/bash
 
-# ok, imma try something crazy
 # program to calculate factorial
-
 factorial () {
 	if [ "$#" -ne 1 ]
 	then
